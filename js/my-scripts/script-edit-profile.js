@@ -11,7 +11,7 @@ async function watchProfile(){
     const sectPrincipal = document.getElementById('sectionPrincipal');
     sectPrincipal.innerHTML = "";
 
-    const url = 'https://truequemundo.herokuapp.com/events/buscar_usuario';
+    const url = 'http://truequemundo.xyz:3000/events/buscar_usuario';
 
     const dataDetails = {
         method: 'POST',
@@ -71,7 +71,7 @@ async function watchProfile(){
     }
 
     function itemTemplate(it){
-        const urlFotos = 'https://truequeprueba.herokuapp.com/Public/uploads/';
+        const urlFotos = 'http://truequemundo.xyz:3000/Public/uploads/';
         return (`<article class="card text-center">
         <div class="card-header">${it.nombre} ${it.apellido}</div>
         <div class="card-body">
@@ -160,7 +160,7 @@ async function watchProfile(){
             }
         }
         
-        const url = 'https://truequemundo.herokuapp.com/events/update_usuario';
+        const url = 'http://truequemundo.xyz:3000/events/update_usuario';
 
         const dataDetails = {
             method: 'POST',
