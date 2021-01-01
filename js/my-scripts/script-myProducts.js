@@ -13,7 +13,7 @@ async function myProductsGet(){
     sectPrincipal.innerHTML = "";
     let c = 0;
 
-    const urlBase = 'https://truequemundo.herokuapp.com/';
+    const urlBase = 'http://truequemundo.xyz:3000/';
     const url = urlBase + 'events/buscar_productoUsuario';
     
     const dataDetails = {
@@ -43,7 +43,7 @@ async function myProductsGet(){
         })
 
         function itemTemplate(it){
-            const urlFotos = 'https://truequemundo.herokuapp.com/Public/uploads/';
+            const urlFotos = 'http://truequemundo.xyz:3000/Public/uploads/';
             c++;
             let selDisp = '';
             let selTrue = '';
