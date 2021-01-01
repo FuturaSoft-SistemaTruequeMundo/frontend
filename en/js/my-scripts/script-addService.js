@@ -106,7 +106,7 @@ async function addNewService(){
         let urlPhoto;
         urlPhoto = previewFile();
 
-        const url = 'https://truequemundo.herokuapp.com/events/new_producto';
+        const url = 'http://truequemundo.xyz:3000/events/new_producto';
 
         const dataDetails = {
             method: 'POST',
