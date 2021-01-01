@@ -11,7 +11,7 @@ async function submitDataLogin(){
     let validation = validateFields(email.value, password.value);
 
     if(validation == 'ok'){
-        let url = 'https://truequemundo.herokuapp.com/login';
+        let url = 'http://truequemundo.xyz:3000/login';
 
         const dataDetails = {
             method: 'POST',
