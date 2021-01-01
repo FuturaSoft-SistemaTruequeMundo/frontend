@@ -30,7 +30,7 @@ async function searcherGet(texto, country, city, titleText){
     let colorState = '';
     let statusProduct = '';
 
-    const urlBase = 'https://truequemundo.herokuapp.com/';
+    const urlBase = 'http://truequemundo.xyz:3000/';
     const url = urlBase + 'events/all';
     
     const dataDetails = {
@@ -59,7 +59,7 @@ async function searcherGet(texto, country, city, titleText){
     })
 
     function itemTemplate(it){
-        const urlFotos = 'https://truequemundo.herokuapp.com/Public/uploads/';
+        const urlFotos = 'http://truequemundo.xyz:3000/Public/uploads/';
         cont++;
 
         if(it.estado == 'disponible'){
@@ -143,7 +143,7 @@ async function searcherGet(texto, country, city, titleText){
                 }
                 };     
 
-            fetch('https://truequemundo.herokuapp.com/events/update_producto', dataDetails)
+            fetch('http://truequemundo.xyz:3000/events/update_producto', dataDetails)
         .then(function(response) {
             return response.json();
         })
