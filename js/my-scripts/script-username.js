@@ -46,7 +46,7 @@ const dataDetails = {
     }
     };     
 
-fetch('https://truequemundo.herokuapp.com/events/buscar_usuario', dataDetails)
+fetch('http://truequemundo.xyz:3000/events/buscar_usuario', dataDetails)
   .then(function(response) {
     return response.json();
   })
