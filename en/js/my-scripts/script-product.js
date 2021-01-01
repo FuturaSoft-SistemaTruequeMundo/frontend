@@ -3,7 +3,7 @@ const loadMyProducts = document.getElementById('btnLoadMyProducts');
 loadMyProducts.addEventListener('click', loadUserProducts);
 
 async function loadUserProducts(){
-    const urlBase = 'https://truequemundo.herokuapp.com/';
+    const urlBase = 'http://truequemundo.xyz:3000/';
     const url = urlBase + 'events/buscar_productoUsuario';
     const HTMLmyProducts = document.getElementById('modalBodyProducts');
     let HTMLString = '';
@@ -32,7 +32,7 @@ async function loadUserProducts(){
     console.log(data);
 
     function itemTemplate(it){
-        const urlFotos = 'https://truequemundo.herokuapp.com/Public/uploads/';
+        const urlFotos = 'http://truequemundo.xyz:3000/Public/uploads/';
         cont++;
         return (`<article class="card">
         <div class="card-body">
