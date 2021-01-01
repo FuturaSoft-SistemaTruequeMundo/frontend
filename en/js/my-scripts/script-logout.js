@@ -3,7 +3,7 @@ let btnLogout = document.getElementById('btnLogout');
 btnLogout.addEventListener('click', logoutWeb);
 
 async function logoutWeb(){
-    const url = 'https://truequemundo.herokuapp.com/events/logout';
+    const url = 'http://truequemundo.xyz:3000/events/logout';
 
     const response = await fetch(url);
     console.log(response);
