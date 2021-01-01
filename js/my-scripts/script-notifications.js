@@ -3,7 +3,7 @@ async function loadNotifications(){
     itemNotifications.innerHTML = "";
     let HTMLStringNotifications = "";
 
-    const urlBase = 'https://truequemundo.herokuapp.com/';
+    const urlBase = 'http://truequemundo.xyz:3000/';
     const url = urlBase + 'events/buscar_productoUsuario';
     
     const dataDetails = {
