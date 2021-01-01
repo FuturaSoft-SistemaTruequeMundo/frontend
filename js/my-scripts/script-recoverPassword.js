@@ -8,7 +8,7 @@ async function submitDataRecover(){
     let validation = validateEmail(email.value);
 
     if(validation == 'ok'){
-        let url = 'https://truequemundo.herokuapp.com/events/recuperarContrasena';
+        let url = 'http://truequemundo.xyz:3000/events/recuperarContrasena';
 
         const dataDetails = {
             method: 'POST',
